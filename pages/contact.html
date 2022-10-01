@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>babystore.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <style>
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: rgb(240, 145, 189);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    background-color: rgb(235, 235, 245);
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
+}
+.first{
+    font-size: 50px;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+
+}
+a{
+font-size: 20px;
+}
+.second{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: rgb(0, 36, 240);
+    text-align: center;
+    cursor: pointer;
+}
+
+.images{
+    width: 1347px;
+    height: 700px;
+}
+
+
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 30px;
+    color: rgb(189, 34, 34);
+    font-weight: bold;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 110px;
+    left: 16px;
+    font-size: 40px;
+    color: rgb(34, 189, 137);
+    font-weight: bold;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+    font-size: 70px;
+    color: rgb(251, 252, 247);
+    font-weight: bold;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 50px;
+    color: rgb(29, 78, 184);
+    font-weight: bold;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+  }
+
+ 
+  
+  .real{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+ 
+    
+  
+
+.animated-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    background-color: rgb(77, 230, 72);
+    box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
+    margin-bottom: 23px;
+}
+h1 {
+    color: #4b00ff;
+    font-weight: 500;
+    font-size: 40px;
+    
+}
+span#words {
+    font-weight: bolder;
+    font-size: 70px;
+    color: blue;
+}
+.God{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.img{
+    width: 280px;
+    background-color:white ;
+    box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.1);
+    height: 350px;
+    border-radius: 30px;
+}
+h3{
+    font-size: 40px;
+}
+
+.now{
+   text-align: center;
+    background-color: skyblue;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 30px;
+    border-radius: 30px;
+    color: red;
+    
+}
+
+.gee{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+aside{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.try{
+    font-size: 40px;
+}
+
+.go {
+    color: rgb(233, 245, 233);
+    background-color: rgb(77, 26, 219);
+  text-align: center;
+    width: 1347px;
+    height: 90px;
+    border-radius: 30px;
+    font-weight: bold;
+    
+  }
+  .stop {
+    font-weight: bold;
+   background-color: rgb(219, 38, 38);
+    color: blue;
+    width: 1347px;
+    height: 90px;
+    border-radius: 30px;
+   
+  }
+
+  .slim{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .payment{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(236, 227, 227);
+    margin-bottom: 30px;
+
+  }
+  .love{
+    width: 250px;
+    height: 150px;
+    border-radius: 30px;
+  }
+  .love{
+   
+   transition: transform 250ms;
+ }
+ .love:hover {
+  transform: translateY(-60px);
+   
+   }
+   .showSlide {  
+            display: none  
+        }  
+            .showSlide img {  
+                width: 100%;  
+            }  
+        .slidercontainer {  
+            max-width: 1000px;  
+            position: relative;  
+            margin: auto;  
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8);  
+            }  
+        .content {  
+            color: #eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 10px;  
+            width: 70%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: #717171;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+        .motion{
+          font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 55px;
+          background-color: skyblue;
+          color: red;
+          font-weight: bolder;
+          padding: 20px;
+          margin-bottom: 24px;
+          text-align: center;
+          
+        }
+        footer{
+  background-color: rgb(223, 223, 83);
+    height: 50vh;
+    width: auto;
+  }
+  .row{
+   
+   display: flex;
+   
+  }
+  .footer-col{
+  /* margin: 40px ; */
+  width: 45%;
+  padding: 0 15px;
+  font-size: 40px;
+  line-height: 38px;
+  
+  }
+  h4{
+    font-size: 30px;
+    color: white;
+    /* padding: 30px; */
+    color: red;
+    
+  }
+  
+
+  .down{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    float: center;
+    text-align: center;
+  }
+
+
+@media only screen and (max-width: 600px) {
+body {
+background-color: lightblue;
+
+}
+
+.images{
+  width: 490px;
+}
+main{
+  width: 490;
+}
+nav{
+    display: grid;
+    place-items: center;
+}
+li{
+    display: flex;
+    font-size: 20px;
+    align-items:flex-start;
+    align-self: flex-start;
+    
+    }
+    
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 40px;
+    color: rgb(243, 11, 11);
+    font-weight: bold;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 900px;
+    left: 16px;
+    font-size: 20px;
+    color: rgb(1, 15, 11);
+    font-weight: bold;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 980px;
+    right: 0px;
+    font-size: 20px;
+    color: rgb(251, 252, 247);
+    font-weight: bold;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 90px;
+    right: 16px;
+    font-size: 30px;
+    color: rgb(29, 78, 184);
+    font-weight: bold;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: rgb(12, 12, 12);
+    font-weight: bold;
+  }
+  h1 {
+    color: #4b00ff;
+    font-weight: 500;
+    font-size: 20px;
+ 
+  }
+  span#words {
+    font-weight: bolder;
+    font-size: 30px;
+    color: blue;
+}
+
+.God{
+    display: grid;
+    place-items: center;
+}
+
+aside{
+    display: grid;
+    place-items: center;
+}
+.try{
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    
+}
+.img{
+    width: 200px;
+    height: 200px; 
+}
+footer{
+    display: grid;
+    place-items: center;
+    background-color: skyblue;
+}
+ .row{
+display: grid;
+place-items: center;
+
+}
+.row{
+width: 400px;
+padding: 0px;
+}
+
+
+.footer-col{
+width: 200px;
+width: auto;
+margin: 20px;
+}
+.payment{
+    display: grid;
+    place-items: center;
+}
+
+} 
+
+
+
+    
+  </style>
+  <body>
+    <nav>
+        <div class="first">
+            EMMA-TOYS
+
+        </div>
+        <ul>
+            <li><a href="./about.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Toys</a></li>
+            <li><a href="#">Coverage</a></li>
+        </ul>
+        <div class="second">
+            Get-started
+        </div>
+    </nav>
+    <main>
+        <img src="./image/hn.jpg" class="images" alt="a picture">
+    </main>
+    <div class="bottom-left">GET YOUR TOYS HERE</div>
+    <div class="top-left">AFFORDABLE FOR YOUR KIDS</div>
+    <div class="top-right">ORDER NOW</div>
+    <div class="bottom-right">Home delivery in 30mins</div>
+    <div class="centered">BEST TOYS SITE</div>
+    <div class="row-outer">
+      <div class="container">
+        <div class="animated-heading">
+          <h1 class="real">WE SELL KIND OF <span id="words">CHILDREN TOYS</span></h1>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      (function () {
+        var words = ["CARTOONS","BICYLE TOYS","SKOOTER","BABY WEARS","ANIMINATED TOYS" ],
+        i = 0;
+        setInterval(function(){ $('#words').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+          }); }, 2000)
+      })();
+    </script>
+    <section>
+        <div class="God">
+            <div class="">
+<img src="./image/ani3.jpg" class="img" alt="this is a image">
+<div class="gee">
+    <h3>TOY CARS</h3>
+  <h4 class="now">$13</h4>
+</div>
+            </div>
+           
+            <div class="">
+                <img src="./image/store.jpg" class="img" alt="this is a image">
+                <div class="gee">
+                <h3>TOY CARS</h3>
+              <h4 class="now">$20</h4>
+            </div>
+            </div>
+            <div class="">
+                <img src="./image/ok.jpeg" class="img" alt="this is a image">
+                <div class="gee">
+                    <h3>TOY CARS</h3>
+                  <h4 class="now">$10</h4>
+                </div>
+            </div>
+            <div class="">
+                <img src="./image/hn.jpg" class="img" alt="this is a image">
+                <div class="gee">
+                    <h3>TOY CARS</h3>
+                  <h4 class="now">$13</h4>
+                </div>
+        </div>
+    </section>
+    <section>
+        <div class="God">
+            
+            <div class="">
+<img src="./image/toy3.jpg" class="img" alt="this is a image">
+<div class="gee">
+    <h3>TOY CARS</h3>
+  <h4 class="now">$13</h4>
+</div>
+            </div>
+           
+            <div class="">
+                <img src="./image/opp.jpg" class="img" alt="this is a image">
+                <div class="gee">
+                <h3>TOY CARS</h3>
+              <h4 class="now">$20</h4>
+            </div>
+            </div>
+            <div class="">
+                <img src="./image/nm.jpg" class="img" alt="this is a image">
+                <div class="gee">
+                    <h3>TOY CARS</h3>
+                  <h4 class="now">$10</h4>
+                </div>
+            </div>
+            <div class="">
+                <img src="./image/bike2.jpg" class="img" alt="this is a image">
+                <div class="gee">
+                    <h3>TOY CARS</h3>
+                  <h4 class="now">$13</h4>
+                </div>
+        </div>
+    </section>
+   <!-- the payment method -->
+<div class="payment">
+<div class="">
+  <img src="./image/zelle.png" class="love" alt="payment image">
+</div>
+<div class="">
+  <img src="./image/visa.png" class="love" alt="payment image">
+</div>
+<div class="">
+  <img src="./image/cashapp.png" class="love" alt="payment image">
+</div>
+<div class="">
+  <img src="./image/master card.png" class="love" alt="payment image">
+</div>
+<div class="">
+  <img src="./image/paypal.png" class="love" alt="payment image">
+</div>
+</div>
+<!-- end of payment method -->
+<div class="motion">
+  CHECK OUT OUR PREVIOUS TOYS ON OUR STORE
+</div>
+<!-- sliding container -->
+<div class="slidercontainer">  
+  <div class="showSlide fade">  
+      <img src="./image/ani.jpg" />  
+      <div class="content">1ST CAR</div>  
+  </div>  
+  <div class="showSlide fade">  
+    <img src="./image/ani2.jpg" />  
+      <div class="content">2ND CAR</div>  
+  </div>  
+
+  <div class="showSlide fade">  
+    <img src="./image/ani3.jpg" /> 
+      <div class="content">3RD CAR</div>  
+  </div>  
+  <div class="showSlide fade">  
+    <img src="./image/ani5.jpg" /> 
+      <div class="content">4TH CAR</div>  
+  </div>  
+  <!-- Navigation arrows -->  
+  <a class="left" onclick="nextSlide(-1)">❮</a>  
+  <a class="right" onclick="nextSlide(1)">❯</a>  
+</div>  
+
+  
+<script type="text/javascript">  
+  var slide_index = 1;  
+  displaySlides(slide_index);  
+
+  function nextSlide(n) {  
+      displaySlides(slide_index += n);  
+  }  
+
+  function currentSlide(n) {  
+      displaySlides(slide_index = n);  
+  }  
+
+  function displaySlides(n) {  
+      var i;  
+      var slides = document.getElementsByClassName("showSlide");  
+      if (n > slides.length) { slide_index = 1 }  
+      if (n < 1) { slide_index = slides.length }  
+      for (i = 0; i < slides.length; i++) {  
+          slides[i].style.display = "none";  
+      }  
+      slides[slide_index - 1].style.display = "block";  
+  }  
+</script> 
+<!-- This is the footer -->
+<footer>
+  <div class="row">
+    <div class="footer-col">
+  
+  <h4>MEMBER</h4>
+  <a href="#">HOME</a><br>
+  <a href="#">SERVICE</a><br>
+  <a href="#">CALCARE</a><br>
+  <a href="#">OPTIONS</a><br>
+
+</div>
+<div class="footer-col">
+  <h4>MEMBER</h4>
+  <a href="#">HOME</a><br>
+  <a href="#">SERVICE</a><br>
+  <a href="#">CALCARE</a><br>
+  <a href="#">OPTIONS</a><br>
+
+</div>
+<div class="footer-col">
+  <h4>MEMBER</h4>
+  <a href="money">HOME</a><br>
+  <a href="money">SERVICE</a><br>
+  <a href="money">CALCARE</a><br>
+  <a href="money">OPTIONS</a><br>
+
+</div>
+<div class="footer-col">
+  <div class="social-media">
+  <h4>PAYMENT</h4>
+  <a href="#"><img src="https://img.icons8.com/color/48/000000/mac-os--v1.png"/></a><br>
+  <a href="#"><img src="https://img.icons8.com/color/48/000000/paypal.png"/></a><br>
+  <a href="#"><img src="https://img.icons8.com/color/48/000000/zelle.png"/></a><br>
+</div>
+</div>
+</div>
+
+</footer>
+  </body>
+</html>
